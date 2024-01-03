@@ -1,10 +1,15 @@
-<h1>Ask your coach a question</h1>
+<h4 class="px-3">Ask your coach a question</h4>
 
-<form action="/answer" data-turbo="false" method="get">
-  <input type="text"
-  name="question"
-  placeholder="Type your question here"
-  value="<%= params[:question]%>"
-  >
-  <input type="submit" value="Ask!">
-</form>
+<div class="row">
+  <form action="/answer" data-turbo="false" method="get" class="col-6 justify-content-center">
+    <div class="d-flex flex-column px-3">
+      <input type="text"
+      name="question"
+      placeholder="Type your question here"
+      class="form-control my-2"
+      value="<%= params[:question]%>"
+      >
+      <button type="submit" class="btn btn-primary">Ask!</button>
+    </div>
+  </form>
+</div>

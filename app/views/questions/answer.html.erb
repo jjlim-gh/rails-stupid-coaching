@@ -1,7 +1,11 @@
-<h2>Stupid Coaching</h2>
+<div class="row ms-3">
+  <div class="col-6">
+    <h4>You:</h4>
+    <p><%= params[:question]%></p>
 
-<h3><%= params[:question]%></h3>
+    <h4>Your Coach:</h4>
+    <p><%= @question %></p>
 
-<p><%= @question %></p>
-
-<%= link_to "Ask another question...", ask_path %>
+    <%= link_to "Ask another question...", ask_path %>
+  </div>
+</div>

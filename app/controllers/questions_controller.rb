@@ -10,8 +10,8 @@ class QuestionsController < ApplicationController
 
     if params[:question] == "I am going to work"
       @question = "Great! 💯"
-    elsif params[:question].end_with?("?")
-      @question = "Silly Question!"
+    elsif params[:question].end_with?('?')
+      @question = 'Silly question, get dressed and go to work!'
     else
       @question = "I don't care, get dressed and go to work!"
     end
